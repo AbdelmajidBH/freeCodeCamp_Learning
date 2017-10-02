@@ -5,7 +5,7 @@
   3. Inside the same loop, check if curNum is odd.
   4. If curNum is odd, add its value to sum if curNum is less than or equal to num (argument).
   5. If curNum is greater than num, break out of the loop. Return accumulated sum of odd numbers in the sequence.
-  6. If curNum is less than or equal to num, set prevNum1 = prevNum2, prevNum2 = curNum.
+  6. Set prevNum1 = prevNum2, prevNum2 = curNum, in order to compute for curNum on the next iteration of the loop.
   7. Repeat steps 2 to 7 until curNum is greater than num.
 */
 function sumFibs(num) {
