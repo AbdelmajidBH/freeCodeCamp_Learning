@@ -4,9 +4,7 @@
   2. Return the first array in the filtered array.
 */
 function findElement(arr, func) {
-  var tmpArr = arr.filter(function(elem) {
-    return func(elem);
-  });
+  var tmpArr = arr.filter(func);
   
   return tmpArr[0];
 }
