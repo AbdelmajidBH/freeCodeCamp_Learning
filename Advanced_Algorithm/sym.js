@@ -21,6 +21,10 @@ function sym(arg) {
       });
       tmpRet = tmpRet.concat(tmpArr);
 
+      /* 
+        assign curArr to cmpArr, assign cmpArr to curArr
+        use a temporary variable to make this possible
+       */      
       tmpArr = curArr;
       curArr = cmpArr;
       cmpArr = tmpArr;
