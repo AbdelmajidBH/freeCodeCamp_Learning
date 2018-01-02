@@ -21,7 +21,7 @@ function round(val, decimal) {
 /*
  Algorithm:
  1. Create an object of string referring to the coin/bill type as key and its actual value/amount as value (coinsBillsObj).
- 2. Create a temporary 2D array (tmpChangeArr) with the inner array having the elements ( elem 1) string equivalent of the coin/bill being represented and ( elem 2) the actual value of the bill/coin.
+ 2. Create a temporary array of arrays (tmpChangeArr) with the inner array having the elements ( elem 1) string equivalent of the coin/bill being represented starting from "PENNY" and ( elem 2) as zero (initially).
  3. Compute for change (changeVal).
  4. Computer for total cash-in-drawer (totalCid).
  5. Return "Insufficient Funds" if totalCid is less than changeVal (insufficient funds condition 1). Else, go to step 4.
